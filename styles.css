@@ -1,46 +1,143 @@
-
+/* Global Styles */
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('clouds.jpg'); /* Background image applied globally */
+  background-size: cover; /* Ensures the image covers the full screen */
+  background-position: center; /* Keeps the image centered */
+  color: #fff; /* White text color for contrast */
 }
 
 header {
-  background-color: #004080;
-  color: white;
-  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background for header */
+  padding: 20px 0;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+header h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding-left: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.nav-links li a {
-  color: white;
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* Gold color for hover effect */
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-grid .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid .image img:hover {
+  transform: scale(1.05); /* Image zoom effect on hover */
+}
+
+/* Form Styles for Booking */
+.booking form {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for form */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.booking label {
+  font-size: 16px;
+  color: #fff;
+}
+
+.booking input,
+.booking select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.booking button {
+  background-color: #ffd700; /* Gold button */
+  color: #000;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.booking button:hover {
+  background-color: #ffcc00; /* Darker gold on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+footer a {
+  color: #ffd700;
   text-decoration: none;
 }
 
-.home-intro {
-  padding: 2rem 0;
-  text-align: center;
-  background-color: #e6f2ff;
+footer a:hover {
+  text-decoration: underline;
 }
-
-footer {
-  background-color: #00264d;
-  color: white;
-  padding: 1rem 0;
+.creatigen-footer p {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 15px;
   text-align: center;
-  font-size: 0.9rem;
 }

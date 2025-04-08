@@ -141,3 +141,9 @@ footer a:hover {
   margin-top: 15px;
   text-align: center;
 }
+.creatigen-footer p {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 15px;
+  text-align: center;
+}
